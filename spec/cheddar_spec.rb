@@ -1,4 +1,4 @@
-require 'human_to_number'
+require 'cheddar'
 
 String::SLANG_ENABLED = true
 
@@ -41,7 +41,8 @@ describe :human_to_number do
 
   it "should like money" do
     '$5.2 million'.human_to_number.should eq(5200000)
-    '10 large'.human_to_number.should eq(1000)
+    '10 large'.human_to_number.should eq(10000)
+    '10 large'.human_to_number.should eq('10 big ones'.human_to_number)
   end
 
 end

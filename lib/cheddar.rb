@@ -11,6 +11,7 @@ class String
       slang = {
         bacon: 1,
         benjamin: 100,
+        'big ones' => 1000,
         bills: 1,
         bread: 1,
         buck: 1,
@@ -19,16 +20,20 @@ class String
         cheddar: 1,
         cheese: 1,
         clams: 1,
+        'c-note' => 100,
+        'dead presidents' => 1,
         dolla: 1,
         dollar: 1,
+        'double sawbuck' => 20,
         dough: 1,
         fin: 5,
         green: 1,
         greenback: 1,
         jackson: 100,
         kale: 1,
-        large: 100,
+        large: 1000,
         lettuce: 1,
+        'long green' => 1,
         loot: 1,
         moolah: 1,
         paper: 1,
@@ -37,11 +42,7 @@ class String
         sawbuck: 10,
         scratch: 1,
         scrip: 1,
-        twankie: 100,
-        'c-note' => 100,
-        'dead presidents' => 1,
-        'double sawbuck' => 20,
-        'long green' => 1
+        twankie: 100
       }
       mapping.merge! slang
     end
