@@ -1,4 +1,4 @@
 Human to Number
 ===============
 
-Little library to conviert human readable strings to numbers.
+Little library to convert human readable strings to numbers.
