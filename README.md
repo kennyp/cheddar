@@ -1,8 +1,8 @@
-== Cheddar - Transform that hard-earned cheese into real integers or Fixnums.
+# Cheddar - Transform that hard-earned cheese into real integers or Fixnums.
 
 Cheddar is a little library for converting human input strings into numbers.
 
-== Installation
+## Installation
 
 `gem install cheddar`
 
@@ -12,7 +12,7 @@ or add the following line to your `Gemfile`:
 
 and run `bundle install` from your shell.
 
-== Examples
+## Examples
 
 The basics.
 
