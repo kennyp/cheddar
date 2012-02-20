@@ -76,7 +76,7 @@ Cheddar.config do |c|
 
   c.dialect(:slang_us) do |d|
     %w(bacon bills bread buck cabbage cash cheddar cheese clams dolla dollar dough green greenback kale lettuce loot moolah paper potato potatoes scratch scrip).each { |p| d.define p, 1 }
-    %w(benjamin c-note jackson twankie).each { |p| d.define p, 1 }
+    %w(benjamin c-note jackson twankie).each { |p| d.define p, 100 }
     d.define 'dead presidents', 1
     d.define 'long green', 1
     d.define 'fin', 5
