@@ -1,6 +1,8 @@
 require 'cheddar'
 
-String::SLANG_ENABLED = true
+Cheddar.config do |c|
+  c.cheddarize
+end
 
 describe :human_to_number do
 
@@ -43,6 +45,11 @@ describe :human_to_number do
     '$5.2 million'.human_to_number.should eq(5200000)
     '10 large'.human_to_number.should eq(10000)
     '10 large'.human_to_number.should eq('10 big ones'.human_to_number)
+  end
+
+  it "should allow custom configuration" do
+    Cheddar.config { |c| c.dialect(:slang_us) { |d| d.define :blings, 100 } }
+    '10 blings'.human_to_number.should eq(1000)
   end
 
 end
