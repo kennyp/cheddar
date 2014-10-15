@@ -85,7 +85,16 @@ Cheddar.config do |c|
     d.define 'large', 1000
     d.define 'big ones', 1000
   end
+  
+  c.dialect(:slang_gb) do |d|
+    %w(alan cherry maggie nicker nugget pound quid sov).each { |p| d.define p, 1}
+    %w(plenty purple score).each { |p| d.define p, 20}
+    %w(bullseye mcgarret nifty pinky thrifty).each { |p| d.define p, 50}
+    %w(cenny century longun oneer).each { |p| d.define p, 100}
+    %w(bag gorilla grand large rio).each { |p| d.define p, 1000}
+    d.define 'pony', 25
+  end
 
-  c.enabled_dialects = [:en_us, :slang_us]
+  c.enabled_dialects = [:en_us, :slang_us, :slang_gb]
 
 end
