@@ -54,4 +54,8 @@ describe :human_to_number do
     '10 blings'.human_to_number.must_equal(1000)
   end
 
+  it 'should support GB slang' do
+    '10 bag'.human_to_number.must_equal(10_000)
+  end
+
 end
