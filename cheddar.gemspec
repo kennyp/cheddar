@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'cheddar'
   s.date        = '2014-10-15'
-  s.version     = '0.0.6'
+  s.version     = '1.0'
   s.licenses    = ['MIT']
   s.summary     = 'Little library to convert human readable strings to numbers.'
   s.description = <<-EOD
